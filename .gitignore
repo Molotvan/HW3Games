@@ -1,10 +1,6 @@
 # Default ignored files
 /shelf/
-/.idea/workspace.xml
+/.idea/
 /Games/
-/misc.xml
-/modules.xml
-/uiDesigner.xml
-/vcs.xml
 /out/
 /HW3Games.iml
