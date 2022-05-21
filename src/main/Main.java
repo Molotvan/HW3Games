@@ -16,16 +16,16 @@ public class Main {
         GameProgress save2 = new GameProgress("save2.dat", 6, 5, 4, 45.8);
         GameProgress save3 = new GameProgress("save3.dat", 5, 7, 5, 46.7);
         for (GameProgress save : GameProgress.GPList) {
-            saveGame(GameProgress.savingDirectory + "//" + save.getId(), save);
+            saveGame(GameProgress.savingDirectory + "savegames//" + save.getId(), save);
 
-            System.out.println(openProgress(GameProgress.savingDirectory + "//" + save.getId()));
+            System.out.println(openProgress(GameProgress.savingDirectory + "//savegames//" + save.getId()));
         }
-        zipFile(GameProgress.savingDirectory + "//packed_GameProgress.zip", GameProgress.pathList);
+        zipFile(GameProgress.savingDirectory + "savegames//packed_GameProgress.zip", GameProgress.pathList);
 
-        openZip(GameProgress.savingDirectory + "//packed_GameProgress.zip", GameProgress.savingDirectory + "//unpacked//");
+        openZip(GameProgress.savingDirectory + "savegames//packed_GameProgress.zip", GameProgress.savingDirectory + "//unpacked//");
 
         for (GameProgress save : GameProgress.GPList) {
-            File file = new File(GameProgress.savingDirectory + "//" + save.getId());
+            File file = new File(GameProgress.savingDirectory + "savegames//" + save.getId());
             if (file.delete()) {
                 System.out.println("Исходный Файл " + save.getId() + " удалён");
             }
