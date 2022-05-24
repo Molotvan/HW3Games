@@ -28,6 +28,13 @@ public class FileCreator {
             report.append("\n");
 
         }
+
+        File unpacked = new File(path + "unpacked");
+        if (unpacked.mkdir()) {
+            report.append("Каталог unpacked создан");
+            report.append("\n");
+
+        }
         File main = new File(src, "main");
         if (main.mkdir()) {
             report.append("Каталог main создан");

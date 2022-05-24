@@ -18,11 +18,11 @@ public class Main {
         for (GameProgress save : GameProgress.GPList) {
             saveGame(GameProgress.savingDirectory + "savegames//" + save.getId(), save);
 
-            System.out.println(openProgress(GameProgress.savingDirectory + "//savegames//" + save.getId()));
+            System.out.println(openProgress(GameProgress.savingDirectory + "savegames//" + save.getId()));
         }
         zipFile(GameProgress.savingDirectory + "savegames//packed_GameProgress.zip", GameProgress.pathList);
 
-        openZip(GameProgress.savingDirectory + "savegames//packed_GameProgress.zip", GameProgress.savingDirectory + "//unpacked//");
+        openZip(GameProgress.savingDirectory + "savegames//packed_GameProgress.zip", GameProgress.savingDirectory + "unpacked//");
 
         for (GameProgress save : GameProgress.GPList) {
             File file = new File(GameProgress.savingDirectory + "savegames//" + save.getId());
@@ -30,7 +30,7 @@ public class Main {
                 System.out.println("Исходный Файл " + save.getId() + " удалён");
             }
 
-            System.out.println("распакованный файл " + openProgress(GameProgress.savingDirectory + "//unpacked//" + save.getId()));
+            System.out.println("распакованный файл " + openProgress(GameProgress.savingDirectory + "unpacked//" + save.getId()));
         }
     }
 

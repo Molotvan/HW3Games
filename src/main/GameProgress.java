@@ -23,7 +23,7 @@ public class GameProgress implements Serializable {
         this.weapons = weapons;
         this.lvl = lvl;
         this.distance = distance;
-        pathList.add(savingDirectory + "//" + id);
+        pathList.add(savingDirectory + "savegames//" + id);
         GPList.add(this);
     }
 
