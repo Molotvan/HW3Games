@@ -11,7 +11,7 @@ import java.util.zip.ZipOutputStream;
 
 public class Main {
     public static void main(String[] args) {
-        FileCreator.createFiles("C:\\Users\\888\\Desktop\\Vano\\Coding\\Netology\\JavaCore\\HW3Games\\Games\\");
+        FileCreator.createFiles(GameProgress.savingDirectory);
         GameProgress save1 = new GameProgress("save1.dat", 8, 4, 3, 32.5);
         GameProgress save2 = new GameProgress("save2.dat", 6, 5, 4, 45.8);
         GameProgress save3 = new GameProgress("save3.dat", 5, 7, 5, 46.7);

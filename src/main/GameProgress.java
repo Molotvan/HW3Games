@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GameProgress implements Serializable {
     private static final long serialVersionUID = 1L;
-    public static String savingDirectory = "C:\\Users\\888\\Desktop\\Vano\\Coding\\Netology\\JavaCore" +
+    public static String savingDirectory = "C:\\Users\\Hewlett Packard\\Desktop\\Coding\\Netology\\Java Core" +
             "\\HW3Games\\Games\\";//ввести своё значение
     private int health;
     private int weapons;
